@@ -48,7 +48,7 @@ matrix1=np.array([
 
 types1=np.array([1,-1,-1,1,-1])
 
-weights1_sub =np.array([0.25,0.2,0.2,0.25,0.05])
+weights1_sub =np.array([0.25,0.2,0.2,0.25,0.1])
 
 weights1_ob=mcdm_weigts.entropy_weights(matrix1)
 # print(weights1_sub)
