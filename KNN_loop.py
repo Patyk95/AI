@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 
-#ładownanie  zbioru danych
+#ładownanie  zbioru danych wino datasets skilearn
 dane=sklearn.datasets.load_wine()
 
 #def to_excel():
@@ -40,6 +40,7 @@ KNN(6)
 def acc_knn(n):
     dane = sklearn.datasets.load_wine()
     c = []
+    cont=0
     for i in range(13):
         for j in range(13):
             if i>=j:
@@ -58,6 +59,7 @@ def acc_knn(n):
                 c.append(v)
                 d=max(c)
                 if v>=d:
+                    cont+=1
                     plt.plot()
                     plt.scatter(x1, x2, marker='o', c=y)
                     plt.title('WYkres dla danych z couln ' + str(i) +' oraz ' + str(j))
