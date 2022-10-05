@@ -5,6 +5,7 @@ from sklearn.metrics import accuracy_score, mean_absolute_error,median_absolute_
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 
+#NaiveBase alg
 
 data= sklearn.datasets.load_diabetes()
 x=(data['data'])
